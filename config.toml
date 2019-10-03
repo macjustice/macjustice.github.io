@@ -1,0 +1,5 @@
+baseURL = "https://macj.dev/"
+languageCode = "en-us"
+title = "Mac Justice"
+theme = "ananke"
+publishdir = "docs"
