@@ -1,53 +1,56 @@
 baseURL = "https://macj.dev/"
-languageCode = "en-us"
-title = "Mac Justice"
-theme = "minimal"
+title = "macjustice"
+theme = "hugo-coder"
 publishdir = "."
 
+languagecode = "en"
+defaultcontentlanguage = "en"
 
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+
+# https://github.com/luizdepra/hugo-coder/wiki/Configurations
 [params]
     author = "Mac Justice"
+    info = "MacOS Endpoint Managment Engineer - Seattle, WA"
     description = "Tired of all this nerd shit"
-    githubUsername = "macjustice"
-    accent = "DarkOliveGreen"
-    showBorder = true
-    backgroundColor = "white"
-    font = "Raleway" # should match the name on Google Fonts!
-    highlight = true
-    highlightStyle = "solarized-dark"
-    highlightLanguages = ["go", "python", "swift"]
+    avatarurl = "content/me.jpg"
+    hidecredits = true
+    hidecopyright = true
+
+
+[[params.social]]
+    name = "Email"
+    icon = "fas fa-envelope fa-2x"
+    url = "mailto:mac.justice@gmail.com"
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-2x"
+    url = "https://github.com/macjustice/"
+[[params.social]]
+    name = "GitLab"
+    icon = "fab fa-gitlab fa-2x"
+    url = "https://gitlab.com/macjustice/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter fa-2x"
+    url = "https://twitter.com/macjustice/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin fa-2x"
+    url = "https://linkedin.com/in/macjustice/"
+
 
 [[menu.main]]
-    url = "/"
-    name = "Home"
+    name = "Blog"
     weight = 1
-
+    url  = "/posts/"
 [[menu.main]]
-    url = "/about/"
     name = "About"
     weight = 2
-
-[[menu.main]]
-    url = "/posts/"
-    name = "Posts"
-    weight = 3
-
-[[menu.icon]]
-    url = "mailto:mac.justice@gmail.com"
-    name = "envelope-o"
-    weight = 1
-
-[[menu.icon]]
-    url = "https://github.com/macjustice/"
-    name = "github"
-    weight = 2
-
-[[menu.icon]]
-    url = "https://twitter.com/macjustice/"
-    name = "twitter"
-    weight = 3
-
-[[menu.icon]]
-    url = "https://www.linkedin.com/in/macjustice/"
-    name = "linkedin"
-    weight = 4
+    url = "/about/"
